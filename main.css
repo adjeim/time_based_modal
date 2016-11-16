@@ -1,0 +1,9 @@
+
+
+#modal {
+	visibility: hidden;
+	background-color: aliceblue;
+	position: fixed;
+	z-index: 1;
+
+}
