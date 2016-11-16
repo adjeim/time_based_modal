@@ -16,6 +16,10 @@ function changeVisibility() {
 
 //If the user enters their email address and clicks submit, the modal will show "thank you".
 
+function submitAndClose() {
+
+	
+}
 
 
 //Listen for a click on the x (span). When the x is clicked, display none again.

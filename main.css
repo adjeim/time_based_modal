@@ -13,6 +13,7 @@ body {
 	margin: 5px auto;
 }
 
+
 .page-heading {
 	position: absolute;
 	left: 0;
@@ -21,6 +22,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+
 }
 
 h1 {
@@ -40,6 +42,7 @@ nav {
 
 .ul-nav li {
 	display: inline-block;
+	padding: 0 15px ;
 
 }
 
@@ -47,20 +50,64 @@ a {
 	text-decoration: none;
 }
 
+section {
+	padding: 10px;
+}
+
 .modal {
 	visibility: hidden;
-	background-color: purple;
+	background-color: navy;
 	position: fixed;
 	z-index: 1;
-	width: 100%;
-/*	top: 0;
-	left: 15%;*/
-
-
+	width: 50%;
+	left: 0;
+	right: 0;
+	bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .modal-content {
 	color: white;
+	padding: 20px;
 
 
+}
+
+.close-modal {
+	text-align: right;
+}
+
+
+label {
+	display: block;
+}
+
+input {
+	width: 95%;
+	height: 20px;
+	font-size: 14px;
+}
+
+#message {
+	height: 10em;
+	width: 95%;
+	vertical-align: top;
+	resize: none;
+	font-size: 14px;
+}
+
+button {
+	font-size: 20px;
+	border: 1px solid gray;
+}
+
+footer {
+	background-color: navy;
+	opacity: 0.7;
+	width: 100%;
+	margin: 5px auto;
+	color: white;
+	text-align: right;
+	padding-right: 15px;
 }
