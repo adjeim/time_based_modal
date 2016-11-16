@@ -1,13 +1,13 @@
 
 //After 3 seconds, changeVisibility of the modal
 
-setTimeout(changeVisibility, 1000);
+setTimeout(changeVisibility, 3000);
 
 
 var visibleModal = document.getElementsByClassName("modal")[0];
 
 
-//Change the display of the modal from none to block
+//Change the visibility from hidden to visible
 function changeVisibility() {
 
 	visibleModal.style.visibility = "visible";
@@ -16,9 +16,14 @@ function changeVisibility() {
 
 //If the user enters their email address and clicks submit, the modal will show "thank you".
 
-function submitAndClose() {
 
-	
+
+var thanksForSubmitting = document.getElementsByClassName("submit")[0];
+thanksForSubmitting.addEventListener("click", submitAndThank);
+
+function submitAndThank() {
+	var changeText = document.getElementsByClassName("inner-modal-content")[0];
+	changeText.innerHTML = "<p>Thanks! You'll be hearing from us soon.</p>";
 }
 
 
