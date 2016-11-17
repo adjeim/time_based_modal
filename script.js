@@ -1,5 +1,5 @@
 
-//After 3 seconds, changeVisibility of the modal
+//After 3 seconds, changeVisibility of the modal.
 
 setTimeout(changeVisibility, 3000);
 
@@ -7,7 +7,7 @@ setTimeout(changeVisibility, 3000);
 var visibleModal = document.getElementsByClassName("modal")[0];
 
 
-//Change the visibility from hidden to visible
+//Change the visibility from hidden to visible.
 function changeVisibility() {
 
 	visibleModal.style.visibility = "visible";
@@ -28,6 +28,7 @@ function submitAndThank() {
 
 
 //Listen for a click on the x (span). When the x is clicked, display none again.
+
 var closeModalWindow = document.getElementById("close-modal");
 closeModalWindow.addEventListener("click", exitModal);
 
