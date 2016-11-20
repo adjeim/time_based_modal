@@ -157,14 +157,29 @@ footer {
 }
 
 
-/*@media all and (max-width: 425px) {
+@media all and (min-width: 450px) {
 
-	.info, .img-container {
-		display: block;
-		margin: 0 auto;
-
-
+	section {
+		padding: 20px;
+		clear: both;
+		margin: 5px auto;
+		overflow: auto;
 	}
 
+	.info, .media-container {
+		display: block;
+		margin: 15px auto;
+		width: 100%;
+	}
 
-}*/
+	.responsive-img {
+		max-width: 80%;
+/*		width: 100%;*/
+		height: auto;
+		margin: 0 auto;
+}
+
+
+
+
+}
