@@ -1,5 +1,6 @@
 body {
 	font-family: sans-serif;
+	box-sizing: border-box;
 }
 
 
@@ -7,7 +8,7 @@ body {
 	background: url('images/mountains.jpg') no-repeat center center;
 	background-size: cover;
 	width: 100%;
-	height: 300px;
+	height: 400px;
 	opacity: 0.75; /* makes the image a bit translucent */
 	position: relative;
 	margin: 5px auto;
@@ -18,7 +19,7 @@ body {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 50px;
+	top: 100px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -54,7 +55,33 @@ a {
 
 section {
 	padding: 10px;
+	clear: both;
+	margin: 5px auto;
+	overflow: auto;
 }
+
+.info {
+	width: 55%;
+	margin: 0;
+	float: left;
+	display: inline-block;
+	margin-right: 2%;
+
+}
+
+.media-container {
+	width: 42%;
+	margin: 0;
+	float: left;
+	display: inline-block;
+}
+
+.responsive-img {
+	/*max-width: 200px;*/
+	width: 100%;
+	height: auto;
+}
+
 
 .modal {
 	visibility: hidden;
@@ -79,6 +106,21 @@ section {
 .close-modal {
 	text-align: right;
 }
+
+
+
+td, th {
+	height: 80px;
+	width: 120px;
+	text-align: center;
+	background-color: aliceblue;
+}
+
+.trh {
+	font-weight: bold;
+}
+
+
 
 
 label {
@@ -113,3 +155,16 @@ footer {
 	text-align: right;
 	padding-right: 15px;
 }
+
+
+/*@media all and (max-width: 425px) {
+
+	.info, .img-container {
+		display: block;
+		margin: 0 auto;
+
+
+	}
+
+
+}*/
