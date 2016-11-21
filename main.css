@@ -13,7 +13,7 @@ body {
 	background: url('images/mountains.jpg') no-repeat center center;
 	background-size: cover;
 	width: 100%;
-	height: 500px;
+	height: 300px;
 	opacity: 0.8; /* makes the image a bit translucent */
 	position: relative;
 	margin: 5px auto;
@@ -33,19 +33,19 @@ body {
 
 h1 {
 	color: #000080;
-	font-size: 80px;
-}
-
-h2 {
 	font-size: 40px;
 }
 
+h2 {
+	font-size: 20px;
+}
+
 h3 {
-	font-size: 25px;
+	font-size: 20px;
 }
 
 p {
-	font-size: 14px;
+	font-size: 16px;
 }
 
 nav {
@@ -62,7 +62,7 @@ nav {
 	display: inline-block;
 	padding: 0 15px;
 	background-color: rgba(255, 255, 255, 0.6);
-	font-size: 27px;
+	font-size: 16px;
 
 }
 
@@ -72,8 +72,8 @@ a {
 }
 
 section {
-	padding: 20px;
-	margin: 25px auto;
+	padding: 15px;
+	margin: 20px auto;
 
 }
 
@@ -100,17 +100,18 @@ section {
 	bottom: 100px;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 10px;
 }
 
 .modal-content {
 	color: #ffffff;
 	padding: 20px;
-	font-size: 30px;
+	font-size: 20px;
 
 }
 
 .modal-content p {
-	font-size: 35px;
+	font-size: 20px;
 
 }
 
@@ -120,20 +121,19 @@ section {
 
 
 table {
-	width: 80%;
 	margin: 0 auto;
 }
 
 th {
-	height: 150px;
-	font-size: 30px;
+	height: 100px;
+	font-size: 18px;
 	text-align: center;
 	background-color: #e6f3ff;
 }
 
 td {
-	height: 100px;
-	font-size: 30px;
+	height: 80px;
+	font-size: 18px;
 	text-align: center;
 	background-color: #e6f3ff;
 }
@@ -147,14 +147,15 @@ td {
 
 label {
 	display: block;
-	font-size: 30px;
+	font-size: 16px;
 }
 
 input {
 	width: 95%;
-	height: 40px;
-	font-size: 30px;
+	height: 20px;
+	font-size: 16px;
 	background-color: #e6f3ff;
+	margin-bottom: 5px;
 }
 
 textarea {
@@ -166,13 +167,8 @@ textarea {
 	margin-top: 20px;
 }
 
-/*#message-header {
-	font-size: 12px;
-	margin-top: 5px;
-}*/
-
 button {
-	font-size: 35px;
+	font-size: 16px;
 	border: 1px solid #737373;
 }
 
@@ -181,7 +177,7 @@ footer {
 	opacity: 0.7;
 	width: 100%;
 	margin: 5px auto;
-	color: white;
+	color: #ffffff;
 	text-align: right;
 	padding-right: 15px;
 	font-size: 35px;
@@ -195,20 +191,20 @@ footer {
 	}
 
 	h1 {
-		font-size: 70px;
+		font-size: 50px;
 	}
 
 
 	h2 {
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	h3 {
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	p {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 
@@ -239,7 +235,7 @@ footer {
 
 
 	.modal {
-		width: 70%;
+		width: 60%;
 	}
 
 	.modal-content {
@@ -248,7 +244,7 @@ footer {
 
 
 	.modal-content p {
-		font-size: 25px;
+		font-size: 16px;
 
 	}
 
@@ -259,32 +255,9 @@ footer {
 	td, th {
 		height: 80px;
 		width: 140px;
-		font-size: 20px;
-	}
-
-
-	label {
-		display: block;
-		font-size: 20px;
-	}
-
-	input {
-		height: 30px;
 		font-size: 16px;
 	}
 
-	textarea {
-		font-size: 16px;
-	}
-/*
-	#message-header {
-		font-size: 20px;
-		margin-top: 5px;
-	}*/
-
-	button {
-		font-size: 25px;
-	}
 
 	footer {
 		font-size: 20px;
