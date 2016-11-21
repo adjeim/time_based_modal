@@ -1,7 +1,11 @@
+/* mobile first styles */
+
+
 body {
 	font-family: sans-serif;
 	box-sizing: border-box;
 	background-color: #f7fafc;
+
 }
 
 
@@ -9,7 +13,7 @@ body {
 	background: url('images/mountains.jpg') no-repeat center center;
 	background-size: cover;
 	width: 100%;
-	height: 400px;
+	height: 500px;
 	opacity: 0.8; /* makes the image a bit translucent */
 	position: relative;
 	margin: 5px auto;
@@ -28,8 +32,20 @@ body {
 }
 
 h1 {
-	font-size: 56px;
 	color: #000080;
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+p {
+	font-size: 14px;
 }
 
 nav {
@@ -46,6 +62,7 @@ nav {
 	display: inline-block;
 	padding: 0 15px;
 	background-color: rgba(255, 255, 255, 0.6);
+	font-size: 27px;
 
 }
 
@@ -55,40 +72,29 @@ a {
 }
 
 section {
-	padding: 10px;
-	clear: both;
-	margin: 5px auto;
-	overflow: auto;
-}
-
-.info {
-	width: 55%;
-	margin: 0;
-	float: left;
-	display: inline-block;
-	margin-right: 2%;
+	padding: 20px;
+	margin: 25px auto;
 
 }
 
+.info, 
 .media-container {
-	width: 42%;
-	margin: 0;
-	float: left;
-	display: inline-block;
+	display: block;
+	margin: 25px auto;
+	width: 100%;
 }
 
 .responsive-img {
-	width: 100%;
-	height: auto;
+	width: 80%;
+	margin-left: 10%;
 }
-
 
 .modal {
 	visibility: hidden;
 	background-color: #000080;
 	position: fixed;
 	z-index: 1; /* makes the modal layer appear on top */
-	width: 50%;
+	width: 70%;
 	left: 0;
 	right: 0;
 	bottom: 100px;
@@ -97,48 +103,76 @@ section {
 }
 
 .modal-content {
-	color: white;
+	color: #ffffff;
 	padding: 20px;
-
+	font-size: 30px;
 
 }
 
-td, th {
-	height: 80px;
-	width: 120px;
+.modal-content p {
+	font-size: 35px;
+
+}
+
+.modal-content input {
+	background-color: #ffffff;
+}
+
+
+table {
+	width: 80%;
+	margin: 0 auto;
+}
+
+th {
+	height: 150px;
+	font-size: 30px;
 	text-align: center;
 	background-color: #e6f3ff;
 }
 
+td {
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+	background-color: #e6f3ff;
+}
 .trh {
+	width: 30%;
+	padding: 0 10px;
+	text-align: center;
 	font-weight: bold;
 }
 
 
-
-
 label {
 	display: block;
+	font-size: 30px;
 }
 
 input {
 	width: 95%;
-	height: 20px;
-	font-size: 14px;
+	height: 40px;
+	font-size: 30px;
 	background-color: #e6f3ff;
 }
 
-#message {
+textarea {
 	height: 10em;
 	width: 95%;
-	vertical-align: top;
 	resize: none;
-	font-size: 14px;
+	font-size: 16px;
 	background-color: #e6f3ff;
+	margin-top: 20px;
 }
 
+/*#message-header {
+	font-size: 12px;
+	margin-top: 5px;
+}*/
+
 button {
-	font-size: 20px;
+	font-size: 35px;
 	border: 1px solid #737373;
 }
 
@@ -150,98 +184,124 @@ footer {
 	color: white;
 	text-align: right;
 	padding-right: 15px;
+	font-size: 35px;
 }
 
 
-@media all and (min-width: 450px) {
+@media all and (min-width: 600px) {
 
-	.ul-nav li {
-		font-size: 27px;
-
+	.hero-img {
+		height: 400px;
 	}
 
 	h1 {
-		font-size: 80px;
+		font-size: 70px;
 	}
 
+
 	h2 {
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	h3 {
 		font-size: 30px;
 	}
 
+	p {
+		font-size: 20px;
+	}
+
+
 	section {
 		padding: 20px;
 		clear: both;
-		margin: 5px auto;
+		margin: 5px 25px;
 		overflow: auto;
 	}
 
-	.info, .media-container {
-		display: block;
-		margin: 15px auto;
-		width: 100%;
+	.info {
+		width: 55%;
+		float: left;
+		display: inline-block;
+	}
+
+	.media-container {
+		width: 42%;
+		margin-left: 2%;
+		float: left;
+		display: inline-block;
+		overflow: auto;
 	}
 
 	.responsive-img {
-		width: 80%;
-		margin-left: 10%;
+		width: 100%;
 	}
+
+
 	.modal {
 		width: 70%;
 	}
 
 	.modal-content {
-		color: white;
 		padding: 20px;
-		font-size: 30px;
-	
 	}
 
-	.modal-content input {
-		background-color: #ffffff;
-	}
 
-	input {
-		height: 40px;
-		font-size: 30px;
-	}
+	.modal-content p {
+		font-size: 25px;
 
-	button {
-		font-size: 35px;
 	}
 
 	table {
-		width: 80%;
-		margin: 0 auto;
+		width: 100%;
 	}
 
-	th {
-		height: 150px;
-		font-size: 30px;
+	td, th {
+		height: 80px;
+		width: 140px;
+		font-size: 20px;
 	}
 
-	td {
-		height: 100px;
-		font-size: 30px;
-	}
-	.trh {
-		width: 30%;
-		padding: 0 10px;
-		text-align: center;
+
+	label {
+		display: block;
+		font-size: 20px;
 	}
 
-	#contact {
-		font-size: 35px;
+	input {
+		height: 30px;
+		font-size: 16px;
 	}
 
-	#contact h3 {
-		font-size: 40px;
+	textarea {
+		font-size: 16px;
+	}
+/*
+	#message-header {
+		font-size: 20px;
+		margin-top: 5px;
+	}*/
+
+	button {
+		font-size: 25px;
 	}
 
 	footer {
-		font-size: 35px;
+		font-size: 20px;
 	}
+
 }
+
+@media all and (min-width: 1440px) {
+
+	body {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+	nav {
+		right: 180px;
+	}
+
+}
+
